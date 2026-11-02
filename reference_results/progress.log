@@ -1,0 +1,15 @@
+21:11:49 V1) FA3 lane-split GPU check
+21:12:16 fa3 slow shapes rc=0 ALL_OK
+21:12:26 fa3 fast shape rc=0 ALL_OK
+21:12:26 V2) 20-SM remaining-resource lane vs 16-SM split lane (slow alone, local KV)
+21:16:18 v2_slow_local_112x20 rc=0 ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}} ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": false}} ASH {"result": {"slow": {"median_ms": 34.90781784057617, "p90_ms": 35.630226135253906, "n": 1479}}, "mode": "slow", "remote": false, "wall_s": 52.295448780059814} 
+21:19:06 v2_slow_local_112x16 rc=0 ASH {"sm_check": {"fast": 112, "slow": 16, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 125, 126, 127]}} ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": false}} ASH {"result": {"slow": {"median_ms": 42.07801818847656, "p90_ms": 43.00484657287598, "n": 1479}}, "mode": "slow", "remote": false, "wall_s": 62.49732494354248} 
+21:19:06 B) full GPU fast-load baseline
+21:22:19 full132 steps=1499 csv=ok 
+21:22:19 I) impact 112/20
+21:26:43 solo_owner steps=3499 csv=ok 
+21:29:14 solo_fast rc=0 ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}} ASH {"result": {"fast": {"median_ms": 20.306110382080078, "p90_ms": 20.619869232177734, "n": 1479}}, "mode": "fast", "remote": false, "wall_s": 30.38705587387085} 
+21:32:41 solo_slow_remote rc=0 ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}} ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": true}} ASH {"result": {"slow": {"median_ms": 52.4439811706543, "p90_ms": 53.21927070617676, "n": 1479}}, "mode": "slow", "remote": true, "wall_s": 78.26531791687012} 
+21:40:11 both_remote rc=0 ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}} ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": true}} ASH {"result": {"fast": {"median_ms": 21.611928939819336, "p90_ms": 22.03836441040039, "n": 1479}, "slow": {"median_ms": 53.418874740600586, "p90_ms": 60.96334457397461, "n": 1479}}, "mode": "both", "remote": true, "wall_s": 83.24785828590393} 
+21:43:57 both_local rc=0 ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}} ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": false}} ASH {"result": {"fast": {"median_ms": 22.200822830200195, "p90_ms": 22.655010223388672, "n": 1479}, "slow": {"median_ms": 35.79211235046387, "p90_ms": 46.97532653808594, "n": 1479}}, "mode": "both", "remote": false, "wall_s": 60.30342221260071} 
+21:43:57 done /scratch/users/ntu/bzhou011/ash/sglang_ash_r001_smbudget/runs/imp_152114

@@ -1,0 +1,4 @@
+ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}}
+ASH {"remote_kv_GB": 11.24993024, "layers": 10}
+ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": true}}
+ASH {"result": {"slow": {"median_ms": 52.4439811706543, "p90_ms": 53.21927070617676, "n": 1479}}, "mode": "slow", "remote": true, "wall_s": 78.26531791687012}

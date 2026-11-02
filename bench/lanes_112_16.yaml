@@ -1,0 +1,8 @@
+# greenctx_dual_r001 single-process lanes: lane 0 "short" = fast batch (112 SMs), lane 1 "long" = slow batch (16 SMs, unused in solo_fast)
+lane_num: 2
+policy: short_long_by_seq_len
+enable_green_ctx: true
+short_green_ctx_sm_count: 112
+long_green_ctx_sm_count: 16
+use_long_cap_graph: false
+manual_divisions: []

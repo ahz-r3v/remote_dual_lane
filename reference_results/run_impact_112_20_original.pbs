@@ -1,0 +1,82 @@
+#!/bin/bash
+#PBS -N ash-imp11220
+#PBS -P 12004493
+#PBS -q normal
+#PBS -l select=1:ngpus=2:ncpus=48:mem=400gb
+#PBS -l walltime=01:58:00
+#PBS -j oe
+# Dual-lane + owner impact with sglang_ash r001, fast/slow = 112/20 SMs (user 2026-10-17: "用新SGLang重测双lane和owner影响图",
+# "按112/20加验证步骤重测"). Shapes as before: owner 20x70k, fast 32x50k, slow 16x32k (KV on the peer GPU in *_remote).
+# Harness dual_lane_bench_r005.py (no kernel patches; SGLang sizes kernels per lane). G1 = compute GPU, G0 = peer (owner + slow KV).
+#  V1) FA3 lane-split GPU check for the slow-lane shapes (B16 x 32k at 16 / 20 / 32 SMs) and the fast shape (B32 x 50k at 112)
+#  V2) 20-SM remaining-resource lane validation: solo_slow_local with 112/20 vs 112/16 (nsys; kernels launch, per-SM efficiency)
+#  B)  full GPU fast-load baseline (plain SGLang, 132 SMs, B32 x 50k)
+#  I)  112/20: solo_owner, solo_fast, solo_slow_remote, both_remote (owner nsys on the peer GPU), both_local
+set -uo pipefail
+E=/scratch/users/ntu/bzhou011/ash/sglang_ash_r001_smbudget; S=/scratch/users/ntu/bzhou011/ash/sglang_ash/r001
+J=${PBS_JOBID%%.*}; R=$E/runs/imp_$J; mkdir -p $R/tests
+source $S/env_aspire2b.sh
+NSYS="$NSYS_BIN profile -t cuda --cuda-graph-trace=node -f true"; NSTATS="$NSYS_BIN stats"
+M=/scratch/users/ntu/bzhou011/models/Qwen3.6-35B-A3B-FP8; LT=${TMPDIR:-/tmp}
+{ t0=$(date +%s); [ -f $LT/model/config.json ] || cp -r $M $LT/model; echo "model copied in $(( $(date +%s) - t0 )) s"; } > $R/model_copy.txt 2>&1 && M=$LT/model
+FAST_B=32; FAST_CTX=51200; SLOW_B=16; SLOW_CTX=32768; OWN_B=20; OWN_CTX=71680; STEPS=1500; OWN_STEPS=3500
+FAST_TOK=$(( FAST_B * (FAST_CTX + STEPS + 128) ))
+export ASH_FAST_B=$FAST_B ASH_FAST_CTX=$FAST_CTX ASH_SLOW_B=$SLOW_B ASH_SLOW_CTX=$SLOW_CTX ASH_FAST_STEPS=$STEPS ASH_SLOW_STEPS=$STEPS
+VIS=${CUDA_VISIBLE_DEVICES:-0,1}; G0=$(echo $VIS | cut -d, -f1); G1=$(echo $VIS | cut -d, -f2)
+P() { echo "$(date +%T) $*" | tee -a $R/progress.log; }
+{ date; hostname; echo "VIS=$VIS G0=$G0 G1=$G1"; nvidia-smi --query-gpu=index,name,uuid --format=csv,noheader
+  sha256sum $E/*.py $E/*.yaml $0; (cd $S && sha256sum $(grep '^diff -ruN' ASH_CHANGES.patch | awk '{print $NF}' | sed 's|sglang_ash/r001/||')); } > $R/env.txt 2>&1
+LANE_BASE="--model-path $M --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache --mem-fraction-static 0.75 --max-total-tokens $FAST_TOK --max-running-requests $FAST_B --cuda-graph-bs 1 --enable-decode-lane-mux"
+OWN="--model-path $M --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache --mem-fraction-static 0.7 --max-running-requests $OWN_B --cuda-graph-max-bs $OWN_B"
+OPF="--profile --profile-activities CUDA_PROFILER --profile-stage decode --profile-start-step 200 --profile-steps 3"
+wait_file() { for t in $(seq 1 900); do [ -f $1 ] && return 0; kill -0 $2 2>/dev/null || return 1; sleep 1; done; return 1; }
+
+run_mode() {  # $1 mode, $2 lanes yaml, $3 dir tag
+  local MODE=$1 Y=$2 D=$R/$3; mkdir -p $D
+  local m rem
+  case $MODE in solo_fast) m=fast; rem=0 ;; solo_slow_local) m=slow; rem=0 ;; solo_slow_remote) m=slow; rem=1 ;; both_local) m=both; rem=0 ;; both_remote) m=both; rem=1 ;; esac
+  local PO=""
+  if [ $MODE = both_remote ]; then
+    ASH_PREFILL_TOKENS=8192 CUDA_VISIBLE_DEVICES=$G0 ASH_ROLE=owner ASH_REMOTE_KV=0 ASH_STEP_LOG=$D/steps_owner.txt ASH_SIGNAL=$D/sig_owner \
+      ASH_READY=$D/ready_owner ASH_GO=$D/GO_owner ASH_DREADY=$D/dready_owner ASH_DGO=$D/DGO \
+      $NSYS -o $D/owner $PYTHON $E/dual_bench.py $OWN $OPF --batch-size $OWN_B --input-len $OWN_CTX --output-len $OWN_STEPS --result-filename $D/owner.jsonl < /dev/null > $D/owner.log 2>&1 & PO=$!
+    wait_file $D/ready_owner $PO && touch $D/GO_owner && wait_file $D/dready_owner $PO || P "$3 owner failed to get ready"
+  fi
+  CUDA_VISIBLE_DEVICES=$G1,$G0 ASH_MODE=$m ASH_REMOTE_KV=$rem ASH_OUT=$D ASH_SIGNAL=$D/sig_lanes ASH_CHECK_SMS=1 ASH_PROFILE_STEP=200 \
+    $NSYS -o $D/lanes $PYTHON $E/dual_lane_bench_r005.py $LANE_BASE --decode-lane-mux-config-path $Y < /dev/null > $D/lanes.log 2>&1 & local PL=$!
+  if [ -n "$PO" ]; then wait_file $D/sig_lanes $PL && touch $D/DGO; fi
+  wait $PL; local rc=$?
+  [ -n "$PO" ] && wait $PO
+  [ -f $D/owner.nsys-rep ] && $NSTATS --report cuda_gpu_trace --format csv -o $D/owner $D/owner.nsys-rep > /dev/null 2>&1
+  [ -f $D/lanes.nsys-rep ] && $NSTATS --report cuda_gpu_trace --format csv -o $D/lanes $D/lanes.nsys-rep > /dev/null 2>&1
+  rm -f $D/*.sqlite
+  P "$3 rc=$rc $(grep -h '"result"\|"sm_check"\|"slow_pools"\|Error\|Traceback' $D/lanes.log | cut -c1-300 | tr '\n' ' ')"
+}
+owner_alone() {  # $1 dir tag, $2 batch, $3 ctx, $4 steps, $5 GPU
+  local D=$R/$1; mkdir -p $D
+  ASH_PREFILL_TOKENS=8192 CUDA_VISIBLE_DEVICES=$5 ASH_ROLE=owner ASH_REMOTE_KV=0 ASH_STEP_LOG=$D/steps_owner.txt ASH_SIGNAL=$D/sig_owner \
+    $NSYS -o $D/owner $PYTHON $E/dual_bench.py --model-path $M --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache \
+    --mem-fraction-static 0.7 --max-running-requests $2 --cuda-graph-max-bs $2 $OPF --batch-size $2 --input-len $3 --output-len $4 \
+    --result-filename $D/owner.jsonl < /dev/null > $D/owner.log 2>&1
+  $NSTATS --report cuda_gpu_trace --format csv -o $D/owner $D/owner.nsys-rep > /dev/null 2>&1; rm -f $D/*.sqlite
+  P "$1 steps=$(wc -l < $D/steps_owner.txt 2>/dev/null) csv=$([ -f $D/owner_cuda_gpu_trace.csv ] && echo ok || echo missing) $(grep -h 'Traceback\|Error' $D/owner.log | head -2 | tr '\n' ' ')"
+}
+
+P "V1) FA3 lane-split GPU check"
+CUDA_VISIBLE_DEVICES=$G1 $PYTHON $S/sglang/test/ash/test_fa3_lane_split_gpu.py --sms 16,20,32 --batches 16 --ctx 4096,32768 --out $R/tests/fa3_slow.json > $R/tests/fa3_slow.log 2>&1
+P "fa3 slow shapes rc=$? $(tail -1 $R/tests/fa3_slow.log)"
+CUDA_VISIBLE_DEVICES=$G1 $PYTHON $S/sglang/test/ash/test_fa3_lane_split_gpu.py --sms 112 --batches 32 --ctx 51200 --out $R/tests/fa3_fast.json > $R/tests/fa3_fast.log 2>&1
+P "fa3 fast shape rc=$? $(tail -1 $R/tests/fa3_fast.log)"
+P "V2) 20-SM remaining-resource lane vs 16-SM split lane (slow alone, local KV)"
+run_mode solo_slow_local $E/lanes_112_rest.yaml v2_slow_local_112x20
+run_mode solo_slow_local $E/lanes_112_16.yaml   v2_slow_local_112x16
+P "B) full GPU fast-load baseline"
+owner_alone full132 $FAST_B $FAST_CTX $STEPS $G1
+P "I) impact 112/20"
+owner_alone solo_owner $OWN_B $OWN_CTX $OWN_STEPS $G0
+run_mode solo_fast        $E/lanes_112_rest.yaml solo_fast
+ln -sfn $R/v2_slow_local_112x20 $R/solo_slow_local
+run_mode solo_slow_remote $E/lanes_112_rest.yaml solo_slow_remote
+run_mode both_remote      $E/lanes_112_rest.yaml both_remote
+run_mode both_local       $E/lanes_112_rest.yaml both_local
+P "done $R"

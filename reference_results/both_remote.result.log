@@ -1,0 +1,4 @@
+ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}}
+ASH {"remote_kv_GB": 11.24993024, "layers": 10}
+ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": true}}
+ASH {"result": {"fast": {"median_ms": 21.611928939819336, "p90_ms": 22.03836441040039, "n": 1479}, "slow": {"median_ms": 53.418874740600586, "p90_ms": 60.96334457397461, "n": 1479}}, "mode": "both", "remote": true, "wall_s": 83.24785828590393}

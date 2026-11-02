@@ -1,0 +1,6 @@
+runs/
+env.sh
+__pycache__/
+*.pyc
+*.nsys-rep
+*.sqlite

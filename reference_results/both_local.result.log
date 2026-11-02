@@ -1,0 +1,3 @@
+ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}}
+ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": false}}
+ASH {"result": {"fast": {"median_ms": 22.200822830200195, "p90_ms": 22.655010223388672, "n": 1479}, "slow": {"median_ms": 35.79211235046387, "p90_ms": 46.97532653808594, "n": 1479}}, "mode": "both", "remote": false, "wall_s": 60.30342221260071}
