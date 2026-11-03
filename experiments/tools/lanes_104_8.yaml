@@ -1,0 +1,9 @@
+# rest-SM sensitivity test (2026-11-03): slow lane = one or more whole 8-SM groups (8 SMs), fast lane 104 SMs (unused in slow mode).
+# Group-aligned partitions avoid the 12-SM remainder whose shape fails some cuBLAS kernels (runs/cublas_probe).
+lane_num: 2
+policy: short_long_by_seq_len
+enable_green_ctx: true
+short_green_ctx_sm_count: 104
+long_green_ctx_sm_count: 8
+use_long_cap_graph: false
+manual_divisions: []

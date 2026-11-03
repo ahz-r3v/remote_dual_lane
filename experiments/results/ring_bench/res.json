@@ -1,0 +1,81 @@
+{
+ "L": 32768,
+ "sms": [
+  8,
+  12,
+  20
+ ],
+ "rows": [
+  {
+   "name": "local_sequential_attention_only",
+   "step_ms": 12.91,
+   "kv": "local"
+  },
+  {
+   "name": "local_sequential_other_only",
+   "step_ms": 28.35,
+   "kv": "local"
+  },
+  {
+   "name": "local_sequential_20sm",
+   "step_ms": 41.25,
+   "kv": "local",
+   "attention_ms": 12.91,
+   "other_ms": 28.35
+  },
+  {
+   "name": "local_attention_only_on8sm",
+   "step_ms": 31.86,
+   "kv": "local"
+  },
+  {
+   "name": "local_ring_attn8_rest12",
+   "step_ms": 58.94,
+   "kv": "local"
+  },
+  {
+   "name": "local_ring_attn12_rest8",
+   "step_ms": 86.44,
+   "kv": "local"
+  },
+  {
+   "name": "remote_sequential_attention_only",
+   "step_ms": 43.01,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_sequential_other_only",
+   "step_ms": 28.36,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_sequential_20sm",
+   "step_ms": 71.38,
+   "kv": "remote",
+   "attention_ms": 43.01,
+   "other_ms": 28.36
+  },
+  {
+   "name": "remote_attention_only_on8sm",
+   "step_ms": 43.19,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_ring_attn8_rest12",
+   "step_ms": 58.44,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_ring_attn12_rest8",
+   "step_ms": 86.33,
+   "kv": "remote"
+  }
+ ],
+ "calibration": {
+  "other_full_ms_20sm": 2.842,
+  "weights_GB": 5.57,
+  "other_mb_ms_on_b": 2.928,
+  "other_mb_ms_on_a": 4.287,
+  "other_full_ms_on_b": 4.247
+ }
+}

@@ -1,0 +1,9 @@
+# rest-SM test: fast lane 120 SMs (unused in slow mode), slow lane = remaining 12 SMs
+# (user 2026-10-17: "按112/20加验证步骤重测"; the 20 SMs are the driver's remaining resource, not a split group)
+lane_num: 2
+policy: short_long_by_seq_len
+enable_green_ctx: true
+short_green_ctx_sm_count: 120
+long_green_ctx_sm_count: -1
+use_long_cap_graph: false
+manual_divisions: []

@@ -1,0 +1,3 @@
+ASH {"lanes": [{"name": "short", "sm_count": 120, "stream": "<torch.cuda.Stream device=cuda:0 cuda_stream=0x17b18290>"}, {"name": "long", "sm_count": 12, "stream": "<torch.cuda.Stream device=cuda:0 cuda_stream=0x179dd1f0>"}], "full_sms": 132}
+ASH {"sm_check": {"fast": 120, "slow": 12, "overlap": 0, "fast_ids": [0, 1, 2, 117, 118, 119], "slow_ids": [120, 121, 122, 129, 130, 131]}}
+ASH {"slow_pools": {"tokens": 33440, "reqs": 8, "kv_device": "cuda:0", "remote": false}}

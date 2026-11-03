@@ -1,0 +1,99 @@
+{
+ "L": 32768,
+ "sms": [
+  8,
+  12,
+  20
+ ],
+ "rows": [
+  {
+   "name": "local_sequential_attention_only",
+   "step_ms": 13.0,
+   "kv": "local"
+  },
+  {
+   "name": "local_sequential_other_only",
+   "step_ms": 26.4,
+   "kv": "local"
+  },
+  {
+   "name": "local_sequential_20sm",
+   "step_ms": 39.41,
+   "kv": "local",
+   "attention_ms": 13.0,
+   "other_ms": 26.4
+  },
+  {
+   "name": "local_attention_only_on8sm",
+   "step_ms": 32.0,
+   "kv": "local"
+  },
+  {
+   "name": "local_ring_attn8_rest12",
+   "step_ms": 49.16,
+   "kv": "local"
+  },
+  {
+   "name": "local_ring_attn12_rest8",
+   "step_ms": 71.63,
+   "kv": "local"
+  },
+  {
+   "name": "remote_sequential_attention_only",
+   "step_ms": 43.02,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_sequential_other_only",
+   "step_ms": 26.41,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_sequential_20sm",
+   "step_ms": 69.43,
+   "kv": "remote",
+   "attention_ms": 43.02,
+   "other_ms": 26.41
+  },
+  {
+   "name": "remote_attention_only_on8sm",
+   "step_ms": 43.19,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_ring_attn8_rest12",
+   "step_ms": 48.62,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_ring_attn12_rest8",
+   "step_ms": 71.88,
+   "kv": "remote"
+  },
+  {
+   "name": "remote_layer_prefetch_20sm",
+   "step_ms": 45.47,
+   "kv": "remote",
+   "extra_local_GB": 2.15
+  },
+  {
+   "name": "remote_migrate_all_then_local",
+   "migrate_ms": 40.7,
+   "migrate_GB": 10.74,
+   "GBps": 264.1,
+   "extra_local_GB": 10.74,
+   "step_ms_amortized": {
+    "10": 43.48,
+    "100": 39.82,
+    "1500": 39.44
+   }
+  }
+ ],
+ "calibration": {
+  "other_full_ms_20sm": 2.652,
+  "weights_GB": 5.36,
+  "other_mb_ms_on_b": 2.448,
+  "other_mb_ms_on_a": 3.559,
+  "other_full_ms_on_b": 3.945
+ }
+}

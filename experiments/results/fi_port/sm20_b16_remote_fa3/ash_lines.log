@@ -1,0 +1,7 @@
+ASH {"lanes": [{"name": "short", "sm_count": 112, "stream": "<torch.cuda.Stream device=cuda:0 cuda_stream=0x3ca3c0b0>"}, {"name": "long", "sm_count": 20, "stream": "<torch.cuda.Stream device=cuda:0 cuda_stream=0x3c73c090>"}], "full_sms": 132}
+ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}}
+ASH {"remote_kv_GB": 10.85671424, "layers": 10}
+ASH {"slow_pools": {"tokens": 530112, "reqs": 16, "kv_device": "cuda:0", "remote": true}}
+ASH {"graphs_ready": true, "avail_GB": 23.213637632}
+ASH {"prefill_slow_s": 52.48718738555908}
+ASH {"result": {"slow": {"median_ms": 69.65303421020508, "p90_ms": 70.80049514770508, "n": 279}}, "mode": "slow", "remote": true, "wall_s": 20.708648204803467}

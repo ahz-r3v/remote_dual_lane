@@ -1,0 +1,10 @@
+sm12_b16     no decode graph kernels (run failed before decode)
+sm12_b8      no decode graph kernels (run failed before decode)
+sm16_b16     steps  305  attention  15.97  rest  24.74 (MoE  16.14, non-MoE   8.60) ms/step
+sm16_b8      steps  305  attention   8.00  rest  17.19 (MoE  10.02, non-MoE   7.17) ms/step
+sm20_b16     steps  305  attention  12.89  rest  20.83 (MoE  12.98, non-MoE   7.85) ms/step
+sm20_b8      steps  305  attention   6.51  rest  15.64 (MoE   8.49, non-MoE   7.15) ms/step
+sm24_b16     steps  305  attention  10.67  rest  18.49 (MoE  11.56, non-MoE   6.93) ms/step
+sm24_b8      steps  305  attention   5.40  rest  13.20 (MoE   7.15, non-MoE   6.04) ms/step
+sm8_b16      steps  305  attention  31.75  rest  45.33 (MoE  31.44, non-MoE  13.89) ms/step
+sm8_b8       steps  305  attention  15.91  rest  30.64 (MoE  19.25, non-MoE  11.40) ms/step

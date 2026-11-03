@@ -1,0 +1,3 @@
+sm20_b16_fi  steps  305  attention   9.91  rest  21.26 (MoE  13.43, non-MoE   7.83) ms/step
+sm20_b16_remote_fa3 steps  305  attention  42.99  rest  20.84 (MoE  13.00, non-MoE   7.85) ms/step
+sm20_b16_remote_fi steps  305  attention  43.19  rest  21.26 (MoE  13.43, non-MoE   7.83) ms/step

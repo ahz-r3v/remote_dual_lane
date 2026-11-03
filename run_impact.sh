@@ -7,6 +7,7 @@
 # Shapes: owner 20 x 70k, fast 32 x 50k, slow 16 x 32k; 1500 decode steps per lane (owner 3500).
 # Usage: source env.sh; MODEL=/path/to/Qwen3.6-35B-A3B-FP8 GPUS=0,1 OUT=./runs/<tag> bash run_impact.sh [step ...]
 #   steps (default all): check v2 full owner fast slow_remote both_remote both_local
+#   EXTRA_ARGS='--load-format dummy' is appended to every SGLang command line (e.g. random weights, no checkpoint read).
 #   NSYS=/path/to/nsys enables nsys traces (needed only for per-kernel analysis; step medians come from steps_*.txt).
 set -uo pipefail
 H=$(cd "$(dirname "$0")" && pwd); B=$H/bench; S=${SGLANG_ASH:-$H/sglang_ash_r001}
@@ -22,8 +23,8 @@ P() { echo "$(date +%T) $*" | tee -a $R/progress.log; }
 { date; hostname; echo "GPUS=$VIS G0=$G0 (KV host) G1=$G1 (compute)"; nvidia-smi --query-gpu=index,name,uuid,driver_version --format=csv,noheader
   nvidia-smi topo -m; $PYTHON -c "import torch,sgl_kernel;print('torch',torch.__version__,'sgl_kernel',sgl_kernel.__version__)"
   sha256sum $B/*.py $B/*.yaml $0; } > $R/env.txt 2>&1
-LANE_BASE="--model-path $MODEL --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache --mem-fraction-static 0.75 --max-total-tokens $FAST_TOK --max-running-requests $FAST_B --cuda-graph-bs 1 --enable-decode-lane-mux"
-OWN="--model-path $MODEL --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache --mem-fraction-static 0.7 --max-running-requests $OWN_B --cuda-graph-max-bs $OWN_B"
+LANE_BASE="--model-path $MODEL --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache --mem-fraction-static 0.75 --max-total-tokens $FAST_TOK --max-running-requests $FAST_B --cuda-graph-bs 1 --enable-decode-lane-mux ${EXTRA_ARGS:-}"
+OWN="--model-path $MODEL --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache --mem-fraction-static 0.7 --max-running-requests $OWN_B --cuda-graph-max-bs $OWN_B ${EXTRA_ARGS:-}"
 wait_file() { for t in $(seq 1 900); do [ -f $1 ] && return 0; kill -0 $2 2>/dev/null || return 1; sleep 1; done; return 1; }
 
 run_mode() {  # $1 mode, $2 lanes yaml, $3 dir tag
@@ -49,7 +50,7 @@ owner_alone() {  # $1 dir tag, $2 batch, $3 ctx, $4 steps, $5 GPU
   local D=$R/$1; mkdir -p $D
   ASH_PREFILL_TOKENS=8192 CUDA_VISIBLE_DEVICES=$5 ASH_ROLE=owner ASH_REMOTE_KV=0 ASH_STEP_LOG=$D/steps_owner.txt ASH_SIGNAL=$D/sig_owner \
     PROF $D/owner $PYTHON $B/dual_bench.py --model-path $MODEL --tp-size 1 --kv-cache-dtype auto --attention-backend fa3 --disable-radix-cache \
-    --mem-fraction-static 0.7 --max-running-requests $2 --cuda-graph-max-bs $2 --batch-size $2 --input-len $3 --output-len $4 \
+    --mem-fraction-static 0.7 --max-running-requests $2 --cuda-graph-max-bs $2 ${EXTRA_ARGS:-} --batch-size $2 --input-len $3 --output-len $4 \
     --result-filename $D/owner.jsonl < /dev/null > $D/owner.log 2>&1
   P "$1 steps=$(wc -l < $D/steps_owner.txt 2>/dev/null) $(grep -h 'Traceback\|Error' $D/owner.log | head -2 | tr '\n' ' ')"
 }

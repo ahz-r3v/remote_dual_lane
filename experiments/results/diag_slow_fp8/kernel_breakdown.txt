@@ -1,0 +1,14 @@
+== solo_slow_local
+stream 147  graph kernels 1947470  steps~1505  kernel time/step 38.008 ms
+  19.582 ms/step   51.5%  x 80.0/step  fused_moe_kernel
+  10.533 ms/step   27.7%  x 20.0/step  device_kernel
+   2.316 ms/step    6.1%  x160.0/step  sm90_fp8_gemm_1d2d_impl
+   2.271 ms/step    6.0%  x 30.0/step  fused_recurrent_gated_delta_rule_packed_decode_kernel
+   0.540 ms/step    1.4%  x  1.0/step  nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT
+== solo_slow_remote
+stream 155  graph kernels 1947470  steps~1505  kernel time/step 49.519 ms
+  22.034 ms/step   44.5%  x 20.0/step  device_kernel
+  19.587 ms/step   39.6%  x 80.0/step  fused_moe_kernel
+   2.323 ms/step    4.7%  x160.0/step  sm90_fp8_gemm_1d2d_impl
+   2.272 ms/step    4.6%  x 30.0/step  fused_recurrent_gated_delta_rule_packed_decode_kernel
+   0.539 ms/step    1.1%  x  1.0/step  nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT

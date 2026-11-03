@@ -1,0 +1,4 @@
+11:13:31 FA3 lane-split GPU check
+11:14:01 fa3 slow shapes rc=0 ALL_OK
+11:14:23 fa3 fast shape rc=0 ALL_OK
+11:14:23 done runs/check1

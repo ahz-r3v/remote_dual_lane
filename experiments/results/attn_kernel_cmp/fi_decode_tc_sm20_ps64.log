@@ -1,0 +1,2 @@
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "local", "page_size": 64, "max_diff_vs_fa3": 0.000244140625, "ms": 0.884, "GBps": 1215.2, "GBps_per_sm": 60.8}
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "remote", "page_size": 64, "max_diff_vs_fa3": 0.000244140625, "ms": 4.29, "GBps": 250.3, "GBps_per_sm": 12.5}

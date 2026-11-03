@@ -1,0 +1,2 @@
+{"kernel": "fi_prefill_fa3", "sms": 8, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 39.419, "GBps": 27.2, "GBps_per_sm": 3.4}
+{"kernel": "fi_prefill_fa3", "sms": 8, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 41.588, "GBps": 25.8, "GBps_per_sm": 3.2}

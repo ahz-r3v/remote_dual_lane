@@ -1,0 +1,2 @@
+sm8_b8_smoke carveout_off=0 rc=1 ASH {"sm_check": {"fast": 104, "slow": 8, "overlap": 0, "fast_ids": [0, 1, 2, 113, 114, 115], "slow_ids": [74, 75, 88, 103, 116, 117]}} [rank0]: Traceback (most recent call last): [rank0]: IndexError: index -1 is out of bounds for axis 0 with size 0 
+sm16_b8_smoke carveout_off=0 rc=1 ASH {"sm_check": {"fast": 104, "slow": 16, "overlap": 0, "fast_ids": [0, 1, 2, 113, 114, 115], "slow_ids": [74, 75, 76, 117, 118, 119]}} [rank0]: Traceback (most recent call last): [rank0]: IndexError: index -1 is out of bounds for axis 0 with size 0 

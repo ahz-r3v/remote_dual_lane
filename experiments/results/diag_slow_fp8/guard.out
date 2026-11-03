@@ -1,0 +1,6 @@
+12:29:02 solo_slow_local rc=0 ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}} ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": false}} ASH {"result": {"slow": {"median_ms": 42.231082916259766, "p90_ms": 43.16115379333496, "n": 1479}}, "mode": "slow", "remote": false, "wall_s": 63.35084271430969} 
+12:31:57 solo_slow_remote rc=0 ASH {"sm_check": {"fast": 112, "slow": 20, "overlap": 0, "fast_ids": [0, 1, 2, 115, 116, 117], "slow_ids": [76, 77, 90, 129, 130, 131]}} ASH {"slow_pools": {"tokens": 549312, "reqs": 16, "kv_device": "cuda:0", "remote": true}} ASH {"result": {"slow": {"median_ms": 54.65507507324219, "p90_ms": 55.171966552734375, "n": 1479}}, "mode": "slow", "remote": true, "wall_s": 81.89689254760742} 
+12:31:57 done runs/diag_slow_fp8
+mode               fast/owner/slow median step (ms)         overlap window
+solo_slow_local    slow 42.23                               
+solo_slow_remote   slow 54.66                               

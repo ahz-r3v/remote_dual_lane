@@ -1,0 +1,16 @@
+stream 147  graph kernels 385520  steps~305  kernel time/step 31.172 ms
+  13.432 ms/step   43.1%  x 80.0/step  fused_moe_kernel
+   9.847 ms/step   31.6%  x 10.0/step  BatchPrefillWithPagedKVCacheKernel
+   2.333 ms/step    7.5%  x160.0/step  sm90_fp8_gemm_1d2d_impl
+   2.251 ms/step    7.2%  x 30.0/step  fused_recurrent_gated_delta_rule_packed_decode_kernel
+   0.540 ms/step    1.7%  x  1.0/step  nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT
+   0.347 ms/step    1.1%  x240.0/step  per_token_group_quant_8bit_kernel
+   0.234 ms/step    0.8%  x 40.0/step  nvjet_sm90_tst_64x8_64x16_4x2_h_bz_TNT
+   0.229 ms/step    0.7%  x 30.0/step  _causal_conv1d_update_kernel
+   0.225 ms/step    0.7%  x 80.0/step  kernel_cutlass_kernel_flashinfernormkernelsfused_add_rmsnormFusedAddRMSNormKernel_object_a
+   0.216 ms/step    0.7%  x 40.0/step  nvjet_sm90_tst_64x8_64x16_1x1_h_bz_TNT
+   0.183 ms/step    0.6%  x 70.0/step  elementwise_kernel
+   0.169 ms/step    0.5%  x 40.0/step  triton_per_fused_copy__mul_sum_0
+   0.165 ms/step    0.5%  x 30.0/step  nvjet_sm90_tst_64x8_64x16_1x2_h_bz_TNT
+   0.162 ms/step    0.5%  x 40.0/step  topkGatingSoftmax
+   0.153 ms/step    0.5%  x100.0/step  vectorized_elementwise_kernel

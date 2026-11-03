@@ -1,0 +1,64 @@
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 16, "K": 4096, "N": 2048, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 16, "K": 2048, "N": 512, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 8, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 16, "K": 2048, "N": 12288, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": false, "M": 16, "K": 8192, "N": 2048, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 16, "K": 4096, "N": 2048, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 16, "K": 2048, "N": 512, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 8, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 16, "K": 2048, "N": 12288, "result": "ok"}
+{"partition": "rest_of_112", "sms": 20, "carveout": true, "M": 16, "K": 8192, "N": 2048, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 16, "K": 4096, "N": 2048, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 16, "K": 2048, "N": 512, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 8, "K": 2048, "N": 4096, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 16, "K": 2048, "N": 12288, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": false, "M": 16, "K": 8192, "N": 2048, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 16, "K": 4096, "N": 2048, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 16, "K": 2048, "N": 512, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 8, "K": 2048, "N": 4096, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 16, "K": 2048, "N": 12288, "result": "ERR CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, &falpha, a, CUDA_R_16B"}
+{"partition": "rest_of_120", "sms": 12, "carveout": true, "M": 16, "K": 8192, "N": 2048, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 16, "K": 4096, "N": 2048, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 16, "K": 2048, "N": 512, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 8, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 16, "K": 2048, "N": 12288, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": false, "M": 16, "K": 8192, "N": 2048, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 16, "K": 4096, "N": 2048, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 16, "K": 2048, "N": 512, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 8, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 16, "K": 2048, "N": 12288, "result": "ok"}
+{"partition": "group8", "sms": 8, "carveout": true, "M": 16, "K": 8192, "N": 2048, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 16, "K": 4096, "N": 2048, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 16, "K": 2048, "N": 512, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 8, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 16, "K": 2048, "N": 12288, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": false, "M": 16, "K": 8192, "N": 2048, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 16, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 16, "K": 4096, "N": 2048, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 16, "K": 2048, "N": 512, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 16, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 8, "K": 2048, "N": 4096, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 8, "K": 2048, "N": 248320, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 16, "K": 2048, "N": 12288, "result": "ok"}
+{"partition": "group8x2", "sms": 16, "carveout": true, "M": 16, "K": 8192, "N": 2048, "result": "ok"}

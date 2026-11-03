@@ -1,0 +1,1162 @@
+[
+ {
+  "dtype": "bf16",
+  "sms": 2,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 12581.6,
+  "local_GBps": 85.3,
+  "remote_us": 13287.5,
+  "remote_GBps": 80.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 2,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 12502.2,
+  "local_GBps": 85.9,
+  "remote_us": 13021.3,
+  "remote_GBps": 82.5
+ },
+ {
+  "dtype": "bf16",
+  "sms": 2,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 12591.9,
+  "local_GBps": 85.3,
+  "remote_us": 13127.6,
+  "remote_GBps": 81.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 2,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 12799.7,
+  "local_GBps": 83.9,
+  "remote_us": 13335.0,
+  "remote_GBps": 80.5
+ },
+ {
+  "dtype": "bf16",
+  "sms": 2,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 13200.5,
+  "local_GBps": 81.3,
+  "remote_us": 13738.9,
+  "remote_GBps": 78.2
+ },
+ {
+  "dtype": "bf16",
+  "sms": 4,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 6302.7,
+  "local_GBps": 170.4,
+  "remote_us": 6743.9,
+  "remote_GBps": 159.2
+ },
+ {
+  "dtype": "bf16",
+  "sms": 4,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 6223.8,
+  "local_GBps": 172.5,
+  "remote_us": 6596.5,
+  "remote_GBps": 162.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 4,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 6310.2,
+  "local_GBps": 170.2,
+  "remote_us": 6645.6,
+  "remote_GBps": 161.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 4,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 6413.7,
+  "local_GBps": 167.4,
+  "remote_us": 6750.6,
+  "remote_GBps": 159.1
+ },
+ {
+  "dtype": "bf16",
+  "sms": 4,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 6615.7,
+  "local_GBps": 162.3,
+  "remote_us": 6946.1,
+  "remote_GBps": 154.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 6,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 4728.5,
+  "local_GBps": 227.1,
+  "remote_us": 5262.1,
+  "remote_GBps": 204.1
+ },
+ {
+  "dtype": "bf16",
+  "sms": 6,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 4321.3,
+  "local_GBps": 248.5,
+  "remote_us": 4811.9,
+  "remote_GBps": 223.1
+ },
+ {
+  "dtype": "bf16",
+  "sms": 6,
+  "num_splits": 3,
+  "lane_rule": true,
+  "local_us": 4195.3,
+  "local_GBps": 255.9,
+  "remote_us": 4718.1,
+  "remote_GBps": 227.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 6,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 4359.1,
+  "local_GBps": 246.3,
+  "remote_us": 4847.9,
+  "remote_GBps": 221.5
+ },
+ {
+  "dtype": "bf16",
+  "sms": 6,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 4326.4,
+  "local_GBps": 248.2,
+  "remote_us": 4824.6,
+  "remote_GBps": 222.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 6,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 4454.9,
+  "local_GBps": 241.0,
+  "remote_us": 4918.7,
+  "remote_GBps": 218.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 8,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 3172.2,
+  "local_GBps": 338.5,
+  "remote_us": 4299.0,
+  "remote_GBps": 249.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 8,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 3135.1,
+  "local_GBps": 342.5,
+  "remote_us": 4306.4,
+  "remote_GBps": 249.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 8,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 3162.3,
+  "local_GBps": 339.5,
+  "remote_us": 4308.3,
+  "remote_GBps": 249.2
+ },
+ {
+  "dtype": "bf16",
+  "sms": 8,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 3230.5,
+  "local_GBps": 332.4,
+  "remote_us": 4327.9,
+  "remote_GBps": 248.1
+ },
+ {
+  "dtype": "bf16",
+  "sms": 8,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 3331.9,
+  "local_GBps": 322.3,
+  "remote_us": 4373.8,
+  "remote_GBps": 245.5
+ },
+ {
+  "dtype": "bf16",
+  "sms": 10,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 3165.7,
+  "local_GBps": 339.2,
+  "remote_us": 4819.2,
+  "remote_GBps": 222.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 10,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 2745.9,
+  "local_GBps": 391.0,
+  "remote_us": 4418.5,
+  "remote_GBps": 243.0
+ },
+ {
+  "dtype": "bf16",
+  "sms": 10,
+  "num_splits": 4,
+  "lane_rule": true,
+  "local_us": 2585.1,
+  "local_GBps": 415.4,
+  "remote_us": 4293.2,
+  "remote_GBps": 250.1
+ },
+ {
+  "dtype": "bf16",
+  "sms": 10,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 2626.6,
+  "local_GBps": 408.8,
+  "remote_us": 4300.3,
+  "remote_GBps": 249.7
+ },
+ {
+  "dtype": "bf16",
+  "sms": 10,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 2686.8,
+  "local_GBps": 399.6,
+  "remote_us": 4299.0,
+  "remote_GBps": 249.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 12,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 2380.8,
+  "local_GBps": 451.0,
+  "remote_us": 4291.0,
+  "remote_GBps": 250.2
+ },
+ {
+  "dtype": "bf16",
+  "sms": 12,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 2348.7,
+  "local_GBps": 457.2,
+  "remote_us": 4419.3,
+  "remote_GBps": 243.0
+ },
+ {
+  "dtype": "bf16",
+  "sms": 12,
+  "num_splits": 3,
+  "lane_rule": true,
+  "local_us": 2104.8,
+  "local_GBps": 510.2,
+  "remote_us": 4291.6,
+  "remote_GBps": 250.2
+ },
+ {
+  "dtype": "bf16",
+  "sms": 12,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 2186.3,
+  "local_GBps": 491.1,
+  "remote_us": 4290.3,
+  "remote_GBps": 250.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 12,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 2224.1,
+  "local_GBps": 482.8,
+  "remote_us": 4309.8,
+  "remote_GBps": 249.1
+ },
+ {
+  "dtype": "bf16",
+  "sms": 12,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 2241.4,
+  "local_GBps": 479.1,
+  "remote_us": 4293.2,
+  "remote_GBps": 250.1
+ },
+ {
+  "dtype": "bf16",
+  "sms": 16,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 1593.8,
+  "local_GBps": 673.7,
+  "remote_us": 4289.1,
+  "remote_GBps": 250.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 16,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 1576.3,
+  "local_GBps": 681.2,
+  "remote_us": 4290.3,
+  "remote_GBps": 250.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 16,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 1590.3,
+  "local_GBps": 675.2,
+  "remote_us": 4289.0,
+  "remote_GBps": 250.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 16,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 1618.6,
+  "local_GBps": 663.4,
+  "remote_us": 4285.8,
+  "remote_GBps": 250.5
+ },
+ {
+  "dtype": "bf16",
+  "sms": 16,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 1673.8,
+  "local_GBps": 641.5,
+  "remote_us": 4283.8,
+  "remote_GBps": 250.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 20,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 1592.2,
+  "local_GBps": 674.4,
+  "remote_us": 4287.5,
+  "remote_GBps": 250.4
+ },
+ {
+  "dtype": "bf16",
+  "sms": 20,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 1569.1,
+  "local_GBps": 684.3,
+  "remote_us": 4414.1,
+  "remote_GBps": 243.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 20,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 1392.7,
+  "local_GBps": 771.0,
+  "remote_us": 4286.1,
+  "remote_GBps": 250.5
+ },
+ {
+  "dtype": "bf16",
+  "sms": 20,
+  "num_splits": 5,
+  "lane_rule": true,
+  "local_us": 1281.5,
+  "local_GBps": 837.9,
+  "remote_us": 4288.3,
+  "remote_GBps": 250.4
+ },
+ {
+  "dtype": "bf16",
+  "sms": 20,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 1327.4,
+  "local_GBps": 808.9,
+  "remote_us": 4284.9,
+  "remote_GBps": 250.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 20,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 1366.6,
+  "local_GBps": 785.7,
+  "remote_us": 4285.2,
+  "remote_GBps": 250.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 32,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 807.3,
+  "local_GBps": 1330.1,
+  "remote_us": 4307.8,
+  "remote_GBps": 249.3
+ },
+ {
+  "dtype": "bf16",
+  "sms": 32,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 800.1,
+  "local_GBps": 1342.1,
+  "remote_us": 4301.7,
+  "remote_GBps": 249.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 32,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 809.0,
+  "local_GBps": 1327.2,
+  "remote_us": 4294.1,
+  "remote_GBps": 250.0
+ },
+ {
+  "dtype": "bf16",
+  "sms": 32,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 828.5,
+  "local_GBps": 1296.0,
+  "remote_us": 4284.0,
+  "remote_GBps": 250.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 32,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 850.6,
+  "local_GBps": 1262.3,
+  "remote_us": 4284.3,
+  "remote_GBps": 250.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 66,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 807.0,
+  "local_GBps": 1330.5,
+  "remote_us": 4313.3,
+  "remote_GBps": 248.9
+ },
+ {
+  "dtype": "bf16",
+  "sms": 66,
+  "num_splits": 2,
+  "lane_rule": true,
+  "local_us": 504.6,
+  "local_GBps": 2127.8,
+  "remote_us": 4291.9,
+  "remote_GBps": 250.2
+ },
+ {
+  "dtype": "bf16",
+  "sms": 66,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 507.8,
+  "local_GBps": 2114.3,
+  "remote_us": 4313.5,
+  "remote_GBps": 248.9
+ },
+ {
+  "dtype": "bf16",
+  "sms": 66,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 515.4,
+  "local_GBps": 2083.1,
+  "remote_us": 4284.4,
+  "remote_GBps": 250.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 66,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 522.9,
+  "local_GBps": 2053.5,
+  "remote_us": 4283.0,
+  "remote_GBps": 250.7
+ },
+ {
+  "dtype": "bf16",
+  "sms": 132,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 814.1,
+  "local_GBps": 1319.0,
+  "remote_us": 4284.4,
+  "remote_GBps": 250.6
+ },
+ {
+  "dtype": "bf16",
+  "sms": 132,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 510.2,
+  "local_GBps": 2104.4,
+  "remote_us": 4281.9,
+  "remote_GBps": 250.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 132,
+  "num_splits": 4,
+  "lane_rule": true,
+  "local_us": 462.9,
+  "local_GBps": 2319.8,
+  "remote_us": 4280.7,
+  "remote_GBps": 250.8
+ },
+ {
+  "dtype": "bf16",
+  "sms": 132,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 468.3,
+  "local_GBps": 2293.0,
+  "remote_us": 4282.3,
+  "remote_GBps": 250.7
+ },
+ {
+  "dtype": "bf16",
+  "sms": 132,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 468.8,
+  "local_GBps": 2290.3,
+  "remote_us": 4282.0,
+  "remote_GBps": 250.8
+ },
+ {
+  "dtype": "fp8",
+  "sms": 2,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 10248.6,
+  "local_GBps": 52.4,
+  "remote_us": 9187.4,
+  "remote_GBps": 58.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 2,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 9712.5,
+  "local_GBps": 55.3,
+  "remote_us": 9458.6,
+  "remote_GBps": 56.8
+ },
+ {
+  "dtype": "fp8",
+  "sms": 2,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 9884.1,
+  "local_GBps": 54.3,
+  "remote_us": 9682.7,
+  "remote_GBps": 55.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 2,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 10173.2,
+  "local_GBps": 52.8,
+  "remote_us": 10001.8,
+  "remote_GBps": 53.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 2,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 10785.4,
+  "local_GBps": 49.8,
+  "remote_us": 10719.9,
+  "remote_GBps": 50.1
+ },
+ {
+  "dtype": "fp8",
+  "sms": 4,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 4908.1,
+  "local_GBps": 109.4,
+  "remote_us": 4598.0,
+  "remote_GBps": 116.8
+ },
+ {
+  "dtype": "fp8",
+  "sms": 4,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 4954.1,
+  "local_GBps": 108.4,
+  "remote_us": 4740.4,
+  "remote_GBps": 113.3
+ },
+ {
+  "dtype": "fp8",
+  "sms": 4,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 4941.8,
+  "local_GBps": 108.6,
+  "remote_us": 4841.6,
+  "remote_GBps": 110.9
+ },
+ {
+  "dtype": "fp8",
+  "sms": 4,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 5098.6,
+  "local_GBps": 105.3,
+  "remote_us": 5017.2,
+  "remote_GBps": 107.0
+ },
+ {
+  "dtype": "fp8",
+  "sms": 4,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 5377.1,
+  "local_GBps": 99.8,
+  "remote_us": 5341.9,
+  "remote_GBps": 100.5
+ },
+ {
+  "dtype": "fp8",
+  "sms": 6,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 3695.8,
+  "local_GBps": 145.3,
+  "remote_us": 3454.7,
+  "remote_GBps": 155.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 6,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 3394.7,
+  "local_GBps": 158.2,
+  "remote_us": 3280.3,
+  "remote_GBps": 163.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 6,
+  "num_splits": 3,
+  "lane_rule": true,
+  "local_us": 3334.9,
+  "local_GBps": 161.0,
+  "remote_us": 3223.7,
+  "remote_GBps": 166.5
+ },
+ {
+  "dtype": "fp8",
+  "sms": 6,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 3419.0,
+  "local_GBps": 157.0,
+  "remote_us": 3347.3,
+  "remote_GBps": 160.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 6,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 3435.2,
+  "local_GBps": 156.3,
+  "remote_us": 3393.9,
+  "remote_GBps": 158.2
+ },
+ {
+  "dtype": "fp8",
+  "sms": 6,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 3620.2,
+  "local_GBps": 148.3,
+  "remote_us": 3610.1,
+  "remote_GBps": 148.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 8,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 2463.2,
+  "local_GBps": 218.0,
+  "remote_us": 2643.6,
+  "remote_GBps": 203.1
+ },
+ {
+  "dtype": "fp8",
+  "sms": 8,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 2495.3,
+  "local_GBps": 215.1,
+  "remote_us": 2529.3,
+  "remote_GBps": 212.3
+ },
+ {
+  "dtype": "fp8",
+  "sms": 8,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 2527.5,
+  "local_GBps": 212.4,
+  "remote_us": 2535.2,
+  "remote_GBps": 211.8
+ },
+ {
+  "dtype": "fp8",
+  "sms": 8,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 2573.4,
+  "local_GBps": 208.6,
+  "remote_us": 2597.4,
+  "remote_GBps": 206.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 8,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 2725.2,
+  "local_GBps": 197.0,
+  "remote_us": 2748.3,
+  "remote_GBps": 195.3
+ },
+ {
+  "dtype": "fp8",
+  "sms": 10,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 2483.2,
+  "local_GBps": 216.2,
+  "remote_us": 2786.8,
+  "remote_GBps": 192.6
+ },
+ {
+  "dtype": "fp8",
+  "sms": 10,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 2185.5,
+  "local_GBps": 245.7,
+  "remote_us": 2508.1,
+  "remote_GBps": 214.1
+ },
+ {
+  "dtype": "fp8",
+  "sms": 10,
+  "num_splits": 4,
+  "lane_rule": true,
+  "local_us": 2048.9,
+  "local_GBps": 262.0,
+  "remote_us": 2370.0,
+  "remote_GBps": 226.5
+ },
+ {
+  "dtype": "fp8",
+  "sms": 10,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 2093.7,
+  "local_GBps": 256.4,
+  "remote_us": 2375.1,
+  "remote_GBps": 226.0
+ },
+ {
+  "dtype": "fp8",
+  "sms": 10,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 2197.4,
+  "local_GBps": 244.3,
+  "remote_us": 2357.3,
+  "remote_GBps": 227.8
+ },
+ {
+  "dtype": "fp8",
+  "sms": 12,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 1850.5,
+  "local_GBps": 290.1,
+  "remote_us": 2307.5,
+  "remote_GBps": 232.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 12,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 1869.5,
+  "local_GBps": 287.2,
+  "remote_us": 2352.1,
+  "remote_GBps": 228.2
+ },
+ {
+  "dtype": "fp8",
+  "sms": 12,
+  "num_splits": 3,
+  "lane_rule": true,
+  "local_us": 1697.3,
+  "local_GBps": 316.3,
+  "remote_us": 2189.2,
+  "remote_GBps": 245.2
+ },
+ {
+  "dtype": "fp8",
+  "sms": 12,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 1745.3,
+  "local_GBps": 307.6,
+  "remote_us": 2225.9,
+  "remote_GBps": 241.2
+ },
+ {
+  "dtype": "fp8",
+  "sms": 12,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 1770.2,
+  "local_GBps": 303.3,
+  "remote_us": 2242.2,
+  "remote_GBps": 239.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 12,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 1840.0,
+  "local_GBps": 291.8,
+  "remote_us": 2231.1,
+  "remote_GBps": 240.6
+ },
+ {
+  "dtype": "fp8",
+  "sms": 16,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 1291.5,
+  "local_GBps": 415.7,
+  "remote_us": 2154.0,
+  "remote_GBps": 249.2
+ },
+ {
+  "dtype": "fp8",
+  "sms": 16,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 1305.8,
+  "local_GBps": 411.2,
+  "remote_us": 2159.7,
+  "remote_GBps": 248.6
+ },
+ {
+  "dtype": "fp8",
+  "sms": 16,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 1307.6,
+  "local_GBps": 410.6,
+  "remote_us": 2165.9,
+  "remote_GBps": 247.9
+ },
+ {
+  "dtype": "fp8",
+  "sms": 16,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 1316.1,
+  "local_GBps": 407.9,
+  "remote_us": 2169.9,
+  "remote_GBps": 247.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 16,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 1398.8,
+  "local_GBps": 383.8,
+  "remote_us": 2179.0,
+  "remote_GBps": 246.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 20,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 1285.8,
+  "local_GBps": 417.5,
+  "remote_us": 2162.7,
+  "remote_GBps": 248.2
+ },
+ {
+  "dtype": "fp8",
+  "sms": 20,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 1254.4,
+  "local_GBps": 428.0,
+  "remote_us": 2309.7,
+  "remote_GBps": 232.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 20,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 1119.1,
+  "local_GBps": 479.7,
+  "remote_us": 2174.3,
+  "remote_GBps": 246.9
+ },
+ {
+  "dtype": "fp8",
+  "sms": 20,
+  "num_splits": 5,
+  "lane_rule": true,
+  "local_us": 1040.6,
+  "local_GBps": 515.9,
+  "remote_us": 2156.7,
+  "remote_GBps": 248.9
+ },
+ {
+  "dtype": "fp8",
+  "sms": 20,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 1069.3,
+  "local_GBps": 502.1,
+  "remote_us": 2161.7,
+  "remote_GBps": 248.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 20,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 1119.8,
+  "local_GBps": 479.4,
+  "remote_us": 2171.1,
+  "remote_GBps": 247.3
+ },
+ {
+  "dtype": "fp8",
+  "sms": 32,
+  "num_splits": 1,
+  "lane_rule": true,
+  "local_us": 629.8,
+  "local_GBps": 852.5,
+  "remote_us": 2149.9,
+  "remote_GBps": 249.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 32,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 635.7,
+  "local_GBps": 844.6,
+  "remote_us": 2151.0,
+  "remote_GBps": 249.6
+ },
+ {
+  "dtype": "fp8",
+  "sms": 32,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 647.0,
+  "local_GBps": 829.8,
+  "remote_us": 2152.7,
+  "remote_GBps": 249.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 32,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 666.0,
+  "local_GBps": 806.1,
+  "remote_us": 2153.5,
+  "remote_GBps": 249.3
+ },
+ {
+  "dtype": "fp8",
+  "sms": 32,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 695.1,
+  "local_GBps": 772.4,
+  "remote_us": 2156.2,
+  "remote_GBps": 249.0
+ },
+ {
+  "dtype": "fp8",
+  "sms": 66,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 627.9,
+  "local_GBps": 855.1,
+  "remote_us": 2150.1,
+  "remote_GBps": 249.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 66,
+  "num_splits": 2,
+  "lane_rule": true,
+  "local_us": 335.3,
+  "local_GBps": 1601.4,
+  "remote_us": 2167.2,
+  "remote_GBps": 247.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 66,
+  "num_splits": 4,
+  "lane_rule": false,
+  "local_us": 339.6,
+  "local_GBps": 1581.1,
+  "remote_us": 2167.1,
+  "remote_GBps": 247.7
+ },
+ {
+  "dtype": "fp8",
+  "sms": 66,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 347.8,
+  "local_GBps": 1543.6,
+  "remote_us": 2170.6,
+  "remote_GBps": 247.3
+ },
+ {
+  "dtype": "fp8",
+  "sms": 66,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 366.0,
+  "local_GBps": 1467.0,
+  "remote_us": 2151.7,
+  "remote_GBps": 249.5
+ },
+ {
+  "dtype": "fp8",
+  "sms": 132,
+  "num_splits": 1,
+  "lane_rule": false,
+  "local_us": 633.9,
+  "local_GBps": 847.0,
+  "remote_us": 2151.6,
+  "remote_GBps": 249.5
+ },
+ {
+  "dtype": "fp8",
+  "sms": 132,
+  "num_splits": 2,
+  "lane_rule": false,
+  "local_us": 338.4,
+  "local_GBps": 1586.5,
+  "remote_us": 2151.7,
+  "remote_GBps": 249.5
+ },
+ {
+  "dtype": "fp8",
+  "sms": 132,
+  "num_splits": 4,
+  "lane_rule": true,
+  "local_us": 262.9,
+  "local_GBps": 2041.9,
+  "remote_us": 2152.5,
+  "remote_GBps": 249.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 132,
+  "num_splits": 8,
+  "lane_rule": false,
+  "local_us": 269.0,
+  "local_GBps": 1995.8,
+  "remote_us": 2152.7,
+  "remote_GBps": 249.4
+ },
+ {
+  "dtype": "fp8",
+  "sms": 132,
+  "num_splits": 16,
+  "lane_rule": false,
+  "local_us": 268.7,
+  "local_GBps": 1997.7,
+  "remote_us": 2153.3,
+  "remote_GBps": 249.3
+ }
+]

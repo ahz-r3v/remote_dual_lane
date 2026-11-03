@@ -1,0 +1,93 @@
+{"split": [112, 20]}
+{"hog_alone_GBps": 3483}
+{"local_frac": 0.0, "layout": "interleaved", "splits": 5, "hog": false, "ms": 4.291, "GBps": 250.2, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "interleaved", "splits": 5, "hog": true, "ms": 4.33, "GBps": 248.0, "hog_GBps": 3348, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "interleaved", "splits": 8, "hog": false, "ms": 4.291, "GBps": 250.2, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "interleaved", "splits": 8, "hog": true, "ms": 4.324, "GBps": 248.3, "hog_GBps": 3352, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "interleaved", "splits": 16, "hog": false, "ms": 4.296, "GBps": 249.9, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "interleaved", "splits": 16, "hog": true, "ms": 4.334, "GBps": 247.7, "hog_GBps": 3355, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "blocked", "splits": 5, "hog": false, "ms": 4.291, "GBps": 250.3, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "blocked", "splits": 5, "hog": true, "ms": 4.324, "GBps": 248.3, "hog_GBps": 3346, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "blocked", "splits": 8, "hog": false, "ms": 4.291, "GBps": 250.2, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "blocked", "splits": 8, "hog": true, "ms": 4.326, "GBps": 248.2, "hog_GBps": 3353, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "blocked", "splits": 16, "hog": false, "ms": 4.294, "GBps": 250.0, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.0, "layout": "blocked", "splits": 16, "hog": true, "ms": 4.334, "GBps": 247.7, "hog_GBps": 3358, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "interleaved", "splits": 5, "hog": false, "ms": 3.239, "GBps": 331.5, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "interleaved", "splits": 5, "hog": true, "ms": 3.281, "GBps": 327.3, "hog_GBps": 3337, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "interleaved", "splits": 8, "hog": false, "ms": 3.249, "GBps": 330.5, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "interleaved", "splits": 8, "hog": true, "ms": 3.273, "GBps": 328.0, "hog_GBps": 3332, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "interleaved", "splits": 16, "hog": false, "ms": 3.228, "GBps": 332.6, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "interleaved", "splits": 16, "hog": true, "ms": 3.271, "GBps": 328.3, "hog_GBps": 3340, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "blocked", "splits": 5, "hog": false, "ms": 3.241, "GBps": 331.3, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "blocked", "splits": 5, "hog": true, "ms": 3.314, "GBps": 324.0, "hog_GBps": 3339, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "blocked", "splits": 8, "hog": false, "ms": 3.232, "GBps": 332.2, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "blocked", "splits": 8, "hog": true, "ms": 3.282, "GBps": 327.2, "hog_GBps": 3339, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "blocked", "splits": 16, "hog": false, "ms": 3.226, "GBps": 332.8, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.25, "layout": "blocked", "splits": 16, "hog": true, "ms": 3.264, "GBps": 329.0, "hog_GBps": 3340, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "interleaved", "splits": 5, "hog": false, "ms": 2.179, "GBps": 492.8, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "interleaved", "splits": 5, "hog": true, "ms": 2.43, "GBps": 441.9, "hog_GBps": 3292, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "interleaved", "splits": 8, "hog": false, "ms": 2.348, "GBps": 457.3, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "interleaved", "splits": 8, "hog": true, "ms": 3.002, "GBps": 357.7, "hog_GBps": 3267, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "interleaved", "splits": 16, "hog": false, "ms": 2.169, "GBps": 495.1, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "interleaved", "splits": 16, "hog": true, "ms": 2.579, "GBps": 416.3, "hog_GBps": 3288, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "blocked", "splits": 5, "hog": false, "ms": 2.178, "GBps": 492.9, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "blocked", "splits": 5, "hog": true, "ms": 2.473, "GBps": 434.1, "hog_GBps": 3286, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "blocked", "splits": 8, "hog": false, "ms": 2.178, "GBps": 493.1, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "blocked", "splits": 8, "hog": true, "ms": 2.534, "GBps": 423.7, "hog_GBps": 3288, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "blocked", "splits": 16, "hog": false, "ms": 2.162, "GBps": 496.6, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.5, "layout": "blocked", "splits": 16, "hog": true, "ms": 2.586, "GBps": 415.2, "hog_GBps": 3290, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "interleaved", "splits": 5, "hog": false, "ms": 1.712, "GBps": 627.0, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "interleaved", "splits": 5, "hog": true, "ms": 2.327, "GBps": 461.4, "hog_GBps": 3240, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "interleaved", "splits": 8, "hog": false, "ms": 1.719, "GBps": 624.8, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "interleaved", "splits": 8, "hog": true, "ms": 2.356, "GBps": 455.8, "hog_GBps": 3252, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "interleaved", "splits": 16, "hog": false, "ms": 1.721, "GBps": 624.0, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "interleaved", "splits": 16, "hog": true, "ms": 2.444, "GBps": 439.3, "hog_GBps": 3265, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "blocked", "splits": 5, "hog": false, "ms": 1.67, "GBps": 643.0, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "blocked", "splits": 5, "hog": true, "ms": 2.301, "GBps": 466.6, "hog_GBps": 3250, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "blocked", "splits": 8, "hog": false, "ms": 1.696, "GBps": 633.0, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "blocked", "splits": 8, "hog": true, "ms": 2.359, "GBps": 455.2, "hog_GBps": 3257, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "blocked", "splits": 16, "hog": false, "ms": 1.741, "GBps": 616.8, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.625, "layout": "blocked", "splits": 16, "hog": true, "ms": 2.442, "GBps": 439.7, "hog_GBps": 3265, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "interleaved", "splits": 5, "hog": false, "ms": 1.357, "GBps": 791.4, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "interleaved", "splits": 5, "hog": true, "ms": 2.094, "GBps": 512.8, "hog_GBps": 3214, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "interleaved", "splits": 8, "hog": false, "ms": 1.479, "GBps": 725.8, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "interleaved", "splits": 8, "hog": true, "ms": 2.236, "GBps": 480.2, "hog_GBps": 3217, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "interleaved", "splits": 16, "hog": false, "ms": 1.433, "GBps": 749.4, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "interleaved", "splits": 16, "hog": true, "ms": 2.227, "GBps": 482.1, "hog_GBps": 3232, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "blocked", "splits": 5, "hog": false, "ms": 1.461, "GBps": 734.7, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "blocked", "splits": 5, "hog": true, "ms": 2.197, "GBps": 488.7, "hog_GBps": 3214, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "blocked", "splits": 8, "hog": false, "ms": 1.473, "GBps": 729.1, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "blocked", "splits": 8, "hog": true, "ms": 2.224, "GBps": 482.7, "hog_GBps": 3224, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "blocked", "splits": 16, "hog": false, "ms": 1.698, "GBps": 632.3, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.75, "layout": "blocked", "splits": 16, "hog": true, "ms": 2.426, "GBps": 442.5, "hog_GBps": 3232, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "interleaved", "splits": 5, "hog": false, "ms": 1.312, "GBps": 818.3, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "interleaved", "splits": 5, "hog": true, "ms": 2.102, "GBps": 510.8, "hog_GBps": 3178, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "interleaved", "splits": 8, "hog": false, "ms": 1.508, "GBps": 712.3, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "interleaved", "splits": 8, "hog": true, "ms": 2.247, "GBps": 477.8, "hog_GBps": 3187, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "interleaved", "splits": 16, "hog": false, "ms": 1.558, "GBps": 689.4, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "interleaved", "splits": 16, "hog": true, "ms": 2.345, "GBps": 457.8, "hog_GBps": 3198, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "blocked", "splits": 5, "hog": false, "ms": 1.337, "GBps": 803.4, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "blocked", "splits": 5, "hog": true, "ms": 2.099, "GBps": 511.6, "hog_GBps": 3174, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "blocked", "splits": 8, "hog": false, "ms": 1.347, "GBps": 797.3, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "blocked", "splits": 8, "hog": true, "ms": 2.149, "GBps": 499.8, "hog_GBps": 3188, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "blocked", "splits": 16, "hog": false, "ms": 1.395, "GBps": 769.6, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 0.875, "layout": "blocked", "splits": 16, "hog": true, "ms": 2.265, "GBps": 474.1, "hog_GBps": 3199, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "interleaved", "splits": 5, "hog": false, "ms": 1.298, "GBps": 827.0, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "interleaved", "splits": 5, "hog": true, "ms": 2.106, "GBps": 509.9, "hog_GBps": 3141, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "interleaved", "splits": 8, "hog": false, "ms": 1.344, "GBps": 798.9, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "interleaved", "splits": 8, "hog": true, "ms": 2.18, "GBps": 492.6, "hog_GBps": 3157, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "interleaved", "splits": 16, "hog": false, "ms": 1.458, "GBps": 736.6, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "interleaved", "splits": 16, "hog": true, "ms": 2.281, "GBps": 470.8, "hog_GBps": 3173, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "blocked", "splits": 5, "hog": false, "ms": 1.299, "GBps": 826.7, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "blocked", "splits": 5, "hog": true, "ms": 2.113, "GBps": 508.1, "hog_GBps": 3144, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "blocked", "splits": 8, "hog": false, "ms": 1.416, "GBps": 758.5, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "blocked", "splits": 8, "hog": true, "ms": 2.214, "GBps": 485.0, "hog_GBps": 3159, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "blocked", "splits": 16, "hog": false, "ms": 1.425, "GBps": 753.5, "hog_GBps": null, "max_diff": 0.0}
+{"local_frac": 1.0, "layout": "blocked", "splits": 16, "hog": true, "ms": 2.266, "GBps": 473.9, "hog_GBps": 3172, "max_diff": 0.0}
+{"scheme": "all_local", "hog": false, "step_ms": 25.72, "other_ms_per_layer": 2.75, "layers": 10, "extra_local_GB": 0.0, "hog_GBps": null}
+{"scheme": "all_local", "hog": true, "step_ms": 38.5, "other_ms_per_layer": 2.75, "layers": 10, "extra_local_GB": 0.0, "hog_GBps": 3265}
+{"scheme": "inplace_remote", "hog": false, "step_ms": 55.67, "other_ms_per_layer": 2.75, "layers": 10, "extra_local_GB": 0.0, "hog_GBps": null}
+{"scheme": "inplace_remote", "hog": true, "step_ms": 60.52, "other_ms_per_layer": 2.75, "layers": 10, "extra_local_GB": 0.0, "hog_GBps": 3337}
+{"scheme": "staged_prefetch", "hog": false, "step_ms": 43.14, "other_ms_per_layer": 2.75, "layers": 10, "extra_local_GB": 2.15, "hog_GBps": null}
+{"scheme": "staged_prefetch", "hog": true, "step_ms": 48.84, "other_ms_per_layer": 2.75, "layers": 10, "extra_local_GB": 2.15, "hog_GBps": 3070}
+{"scheme": "migrate_one_request", "MB": 671, "ms": 2.9, "GBps": 231.4}

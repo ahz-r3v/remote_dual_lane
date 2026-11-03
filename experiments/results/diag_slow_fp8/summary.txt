@@ -1,0 +1,3 @@
+mode               fast/owner/slow median step (ms)         overlap window
+solo_slow_local    slow 42.23                               
+solo_slow_remote   slow 54.66                               

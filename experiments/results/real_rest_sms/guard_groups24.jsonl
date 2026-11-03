@@ -1,0 +1,1 @@
+{"cmd": ["env", "MODEL=/mnt/network_drive/boxi/ash_models/Qwen3.6-35B-A3B-FP8", "OUT=runs/real_rest_sms", "NSYS=/usr/local/bin/nsys", "CONFIGS=24:16 24:8", "bash", "runs/tools/real_rest_sms.sh"], "gpu": [0, 1], "rc": 0, "samples": 233, "foreign_samples": 0, "foreign": [], "start": 1793671257.670387, "end": 1793671441.8671346, "priority": 0, "yields": []}

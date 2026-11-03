@@ -1,0 +1,2 @@
+{"kernel": "fi_decode_cuda", "sms": 8, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 11.427, "GBps": 94.0, "GBps_per_sm": 11.7}
+{"kernel": "fi_decode_cuda", "sms": 8, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 11.43, "GBps": 93.9, "GBps_per_sm": 11.7}

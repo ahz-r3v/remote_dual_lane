@@ -1,0 +1,92 @@
+{
+ "K": {
+  "values": 167772160,
+  "H_sign": 1.0,
+  "H_mant": 6.972,
+  "H_exp_global": 2.726,
+  "H_exp_per_layer_head": 2.719,
+  "H_exp_per_channel": 2.504,
+  "ratio_entropy_global": 1.496,
+  "ratio_entropy_per_layer_head": 1.497,
+  "ratio_entropy_per_channel": 1.527,
+  "block_channels_b2": {
+   "bits_per_value": 26.689,
+   "ratio": 0.599,
+   "exception_frac": 0.5176
+  },
+  "block_channels_b3": {
+   "bits_per_value": 12.493,
+   "ratio": 1.281,
+   "exception_frac": 0.0428
+  },
+  "block_channels_b4": {
+   "bits_per_value": 12.133,
+   "ratio": 1.319,
+   "exception_frac": 0.0003
+  },
+  "block_tokens_b2": {
+   "bits_per_value": 19.863,
+   "ratio": 0.806,
+   "exception_frac": 0.3043
+  },
+  "block_tokens_b3": {
+   "bits_per_value": 11.753,
+   "ratio": 1.361,
+   "exception_frac": 0.0196
+  },
+  "block_tokens_b4": {
+   "bits_per_value": 12.127,
+   "ratio": 1.319,
+   "exception_frac": 0.0001
+  },
+  "lzma_exp_bits": 2.97,
+  "lzma_mant_bits": 7.095,
+  "ratio_lzma_planes": 1.446
+ }
+}
+{
+ "V": {
+  "values": 167772160,
+  "H_sign": 1.0,
+  "H_mant": 6.97,
+  "H_exp_global": 2.812,
+  "H_exp_per_layer_head": 2.707,
+  "H_exp_per_channel": 2.522,
+  "ratio_entropy_global": 1.484,
+  "ratio_entropy_per_layer_head": 1.499,
+  "ratio_entropy_per_channel": 1.525,
+  "block_channels_b2": {
+   "bits_per_value": 26.814,
+   "ratio": 0.597,
+   "exception_frac": 0.5215
+  },
+  "block_channels_b3": {
+   "bits_per_value": 12.468,
+   "ratio": 1.283,
+   "exception_frac": 0.042
+  },
+  "block_channels_b4": {
+   "bits_per_value": 12.13,
+   "ratio": 1.319,
+   "exception_frac": 0.0002
+  },
+  "block_tokens_b2": {
+   "bits_per_value": 22.624,
+   "ratio": 0.707,
+   "exception_frac": 0.3906
+  },
+  "block_tokens_b3": {
+   "bits_per_value": 12.004,
+   "ratio": 1.333,
+   "exception_frac": 0.0275
+  },
+  "block_tokens_b4": {
+   "bits_per_value": 12.128,
+   "ratio": 1.319,
+   "exception_frac": 0.0001
+  },
+  "lzma_exp_bits": 2.915,
+  "lzma_mant_bits": 7.091,
+  "ratio_lzma_planes": 1.454
+ }
+}

@@ -1,0 +1,2 @@
+{"kernel": "fa3", "sms": 4, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 6.296, "GBps": 170.6, "GBps_per_sm": 42.6}
+{"kernel": "fa3", "sms": 4, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 6.735, "GBps": 159.4, "GBps_per_sm": 39.9}

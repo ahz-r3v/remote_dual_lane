@@ -1,0 +1,1 @@
+{"cmd": ["env", "OUT=runs/attn_kernel_cmp", "UNITS=fi_decode_tc:4:1 fi_decode_tc:8:1 fi_decode_tc:20:1 fi_decode_tc:20:64", "bash", "runs/tools/attn_kernel_cmp.sh"], "gpu": [0, 1], "rc": 0, "samples": 66, "foreign_samples": 0, "foreign": [], "start": 1793674554.944839, "end": 1793674607.765683, "priority": 0, "yields": []}

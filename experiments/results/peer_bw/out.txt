@@ -1,0 +1,31 @@
+copy_ via alias (same-device view) 266 GB/s
+peer copy cuda:1->cuda:0 (copy engine) 265 GB/s
+local copy cuda:0 (for scale) 1781 GB/s
+SM loads remote ctas    20 warps 4      48 GB/s
+SM loads remote ctas    20 warps 8      22 GB/s
+SM loads remote ctas    40 warps 4      94 GB/s
+SM loads remote ctas    40 warps 8      44 GB/s
+SM loads remote ctas    80 warps 4     181 GB/s
+SM loads remote ctas    80 warps 8      88 GB/s
+SM loads remote ctas   132 warps 4     221 GB/s
+SM loads remote ctas   132 warps 8     142 GB/s
+SM loads remote ctas   264 warps 4     223 GB/s
+SM loads remote ctas   264 warps 8     217 GB/s
+SM loads remote ctas   528 warps 4     225 GB/s
+SM loads remote ctas   528 warps 8     223 GB/s
+SM loads remote ctas  1056 warps 4     226 GB/s
+SM loads remote ctas  1056 warps 8     225 GB/s
+SM loads local  ctas    20 warps 4      93 GB/s
+SM loads local  ctas    20 warps 8      45 GB/s
+SM loads local  ctas    40 warps 4     185 GB/s
+SM loads local  ctas    40 warps 8      89 GB/s
+SM loads local  ctas    80 warps 4     370 GB/s
+SM loads local  ctas    80 warps 8     178 GB/s
+SM loads local  ctas   132 warps 4     608 GB/s
+SM loads local  ctas   132 warps 8     298 GB/s
+SM loads local  ctas   264 warps 4    1145 GB/s
+SM loads local  ctas   264 warps 8     588 GB/s
+SM loads local  ctas   528 warps 4    2008 GB/s
+SM loads local  ctas   528 warps 8    1102 GB/s
+SM loads local  ctas  1056 warps 4    2728 GB/s
+SM loads local  ctas  1056 warps 8    1980 GB/s

@@ -1,0 +1,68 @@
+{"kernel": "fa3", "sms": 20, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 1.298, "GBps": 827.3, "GBps_per_sm": 41.4}
+{"kernel": "fa3", "sms": 20, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.29, "GBps": 250.3, "GBps_per_sm": 12.5}
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 0.898, "GBps": 1195.2, "GBps_per_sm": 59.8}
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.289, "GBps": 250.3, "GBps_per_sm": 12.5}
+{"kernel": "fa3", "sms": 8, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 3.162, "GBps": 339.5, "GBps_per_sm": 42.4}
+{"kernel": "fa3", "sms": 8, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.304, "GBps": 249.5, "GBps_per_sm": 31.2}
+{"kernel": "fa3", "sms": 16, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 1.595, "GBps": 673.3, "GBps_per_sm": 42.1}
+{"kernel": "fa3", "sms": 16, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.288, "GBps": 250.4, "GBps_per_sm": 15.6}
+{"kernel": "fa3", "sms": 24, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 1.064, "GBps": 1009.3, "GBps_per_sm": 42.1}
+{"kernel": "fa3", "sms": 24, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.284, "GBps": 250.7, "GBps_per_sm": 10.4}
+{"kernel": "fi_decode_cuda", "sms": 8, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 11.427, "GBps": 94.0, "GBps_per_sm": 11.7}
+{"kernel": "fi_decode_cuda", "sms": 8, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 11.43, "GBps": 93.9, "GBps_per_sm": 11.7}
+{"kernel": "fi_decode_cuda", "sms": 16, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 5.754, "GBps": 186.6, "GBps_per_sm": 11.7}
+{"kernel": "fi_decode_cuda", "sms": 16, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 5.748, "GBps": 186.8, "GBps_per_sm": 11.7}
+{"kernel": "fi_decode_cuda", "sms": 20, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 4.672, "GBps": 229.8, "GBps_per_sm": 11.5}
+{"kernel": "fi_decode_cuda", "sms": 20, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.692, "GBps": 228.9, "GBps_per_sm": 11.4}
+{"kernel": "fi_decode_cuda", "sms": 24, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 3.955, "GBps": 271.5, "GBps_per_sm": 11.3}
+{"kernel": "fi_decode_cuda", "sms": 24, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.391, "GBps": 244.5, "GBps_per_sm": 10.2}
+{"kernel": "fi_decode_tc", "sms": 8, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 2.151, "GBps": 499.2, "GBps_per_sm": 62.4}
+{"kernel": "fi_decode_tc", "sms": 8, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.335, "GBps": 247.7, "GBps_per_sm": 31.0}
+{"kernel": "fi_decode_tc", "sms": 16, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 1.094, "GBps": 981.5, "GBps_per_sm": 61.3}
+{"kernel": "fi_decode_tc", "sms": 16, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.292, "GBps": 250.2, "GBps_per_sm": 15.6}
+{"kernel": "fi_decode_tc", "sms": 24, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 0.77, "GBps": 1394.3, "GBps_per_sm": 58.1}
+{"kernel": "fi_decode_tc", "sms": 24, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.288, "GBps": 250.4, "GBps_per_sm": 10.4}
+{"kernel": "fi_prefill_fa2", "sms": 8, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 2.154, "GBps": 498.6, "GBps_per_sm": 62.3}
+{"kernel": "fi_prefill_fa2", "sms": 8, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.336, "GBps": 247.6, "GBps_per_sm": 31.0}
+{"kernel": "fi_prefill_fa2", "sms": 16, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 1.099, "GBps": 977.4, "GBps_per_sm": 61.1}
+{"kernel": "fi_prefill_fa2", "sms": 16, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.295, "GBps": 250.0, "GBps_per_sm": 15.6}
+{"kernel": "fi_prefill_fa2", "sms": 20, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 0.904, "GBps": 1188.1, "GBps_per_sm": 59.4}
+{"kernel": "fi_prefill_fa2", "sms": 20, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.293, "GBps": 250.1, "GBps_per_sm": 12.5}
+{"kernel": "fi_prefill_fa2", "sms": 24, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 0.773, "GBps": 1389.3, "GBps_per_sm": 57.9}
+{"kernel": "fi_prefill_fa2", "sms": 24, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.29, "GBps": 250.3, "GBps_per_sm": 10.4}
+{"kernel": "fi_prefill_fa3", "sms": 8, "kv": "local", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 8, "kv": "remote", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 16, "kv": "local", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 16, "kv": "remote", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 20, "kv": "local", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 20, "kv": "remote", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 24, "kv": "local", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 24, "kv": "remote", "error": "RuntimeError: Ninja build failed. Ninja output:\nninja: Entering directory `/mnt/vdb/tmp/chengzhi_remote_kv_slowlane/fi/.cache/flashinfer/0.6.12/90a/cached_ops/batch_prefill_with_kv_cache_dtype_q_bf16_dtype_kv_bf16_dtype_o_bf16_dtype_idx_i32_head_dim_qk_256_head_dim_vo_256_posenc_0_use_swa_False_use_logits_cap_Fal"}
+{"kernel": "fi_prefill_fa3", "sms": 8, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 39.419, "GBps": 27.2, "GBps_per_sm": 3.4}
+{"kernel": "fi_prefill_fa3", "sms": 8, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 41.588, "GBps": 25.8, "GBps_per_sm": 3.2}
+{"kernel": "fi_prefill_fa3", "sms": 16, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 20.379, "GBps": 52.7, "GBps_per_sm": 3.3}
+{"kernel": "fi_prefill_fa3", "sms": 16, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 34.874, "GBps": 30.8, "GBps_per_sm": 1.9}
+{"kernel": "fi_prefill_fa3", "sms": 20, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 16.877, "GBps": 63.6, "GBps_per_sm": 3.2}
+{"kernel": "fi_prefill_fa3", "sms": 20, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 34.784, "GBps": 30.9, "GBps_per_sm": 1.5}
+{"kernel": "fi_prefill_fa3", "sms": 24, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 14.427, "GBps": 74.4, "GBps_per_sm": 3.1}
+{"kernel": "fi_prefill_fa3", "sms": 24, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 34.831, "GBps": 30.8, "GBps_per_sm": 1.3}
+{"kernel": "fa3", "sms": 4, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 6.296, "GBps": 170.6, "GBps_per_sm": 42.6}
+{"kernel": "fa3", "sms": 4, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 6.735, "GBps": 159.4, "GBps_per_sm": 39.9}
+{"kernel": "fa3", "sms": 12, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 2.101, "GBps": 511.1, "GBps_per_sm": 42.6}
+{"kernel": "fa3", "sms": 12, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.298, "GBps": 249.8, "GBps_per_sm": 20.8}
+{"kernel": "fi_decode_tc", "sms": 4, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 4.27, "GBps": 251.5, "GBps_per_sm": 62.9}
+{"kernel": "fi_decode_tc", "sms": 4, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.822, "GBps": 222.7, "GBps_per_sm": 55.7}
+{"kernel": "fi_decode_tc", "sms": 12, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 1.485, "GBps": 723.1, "GBps_per_sm": 60.3}
+{"kernel": "fi_decode_tc", "sms": 12, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 4.302, "GBps": 249.6, "GBps_per_sm": 20.8}
+{"kernel": "fi_prefill_fa3", "sms": 4, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 77.452, "GBps": 13.9, "GBps_per_sm": 3.5}
+{"kernel": "fi_prefill_fa3", "sms": 4, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 79.875, "GBps": 13.4, "GBps_per_sm": 3.4}
+{"kernel": "fi_prefill_fa3", "sms": 12, "kv": "local", "max_diff_vs_fa3": 0.000244140625, "ms": 26.513, "GBps": 40.5, "GBps_per_sm": 3.4}
+{"kernel": "fi_prefill_fa3", "sms": 12, "kv": "remote", "max_diff_vs_fa3": 0.000244140625, "ms": 35.382, "GBps": 30.3, "GBps_per_sm": 2.5}
+{"kernel": "fi_decode_tc", "sms": 4, "kv": "local", "page_size": 1, "max_diff_vs_fa3": 0.000244140625, "ms": 4.583, "GBps": 234.3, "GBps_per_sm": 58.6}
+{"kernel": "fi_decode_tc", "sms": 4, "kv": "remote", "page_size": 1, "max_diff_vs_fa3": 0.000244140625, "ms": 5.0, "GBps": 214.7, "GBps_per_sm": 53.7}
+{"kernel": "fi_decode_tc", "sms": 8, "kv": "local", "page_size": 1, "max_diff_vs_fa3": 0.000244140625, "ms": 2.312, "GBps": 464.4, "GBps_per_sm": 58.0}
+{"kernel": "fi_decode_tc", "sms": 8, "kv": "remote", "page_size": 1, "max_diff_vs_fa3": 0.000244140625, "ms": 4.336, "GBps": 247.6, "GBps_per_sm": 31.0}
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "local", "page_size": 1, "max_diff_vs_fa3": 0.000244140625, "ms": 0.977, "GBps": 1098.7, "GBps_per_sm": 54.9}
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "remote", "page_size": 1, "max_diff_vs_fa3": 0.000244140625, "ms": 4.289, "GBps": 250.3, "GBps_per_sm": 12.5}
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "local", "page_size": 64, "max_diff_vs_fa3": 0.000244140625, "ms": 0.884, "GBps": 1215.2, "GBps_per_sm": 60.8}
+{"kernel": "fi_decode_tc", "sms": 20, "kv": "remote", "page_size": 64, "max_diff_vs_fa3": 0.000244140625, "ms": 4.29, "GBps": 250.3, "GBps_per_sm": 12.5}

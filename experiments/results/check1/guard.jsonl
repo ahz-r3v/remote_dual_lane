@@ -1,0 +1,1 @@
+{"cmd": ["env", "MODEL=/mnt/network_drive/boxi/ash_models/Qwen3.6-35B-A3B-FP8", "GPUS=1,1", "OUT=runs/check1", "bash", "run_impact.sh", "check"], "gpu": 1, "rc": 0, "samples": 98, "foreign_samples": 0, "foreign": [], "start": 1793618005.5202396, "end": 1793618064.4077642}
